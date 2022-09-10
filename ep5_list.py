@@ -25,8 +25,9 @@ print(value_string_list[::2]) # Result ['a', 'c', 5, 7, 7]
 print(value_string_list[::-2]) # Result [7, 7, 5, 'c', 'a']
 
 
-
+'''
 <list object>.append(value)
+'''
 #---------------------------
 fruits = ['apple', 'banana']
 fruits.append("orange")
@@ -37,21 +38,27 @@ b = ["Ford", "BMW", "Volvo"]
 a.append(b)
 print(a) # Result ???
 
+'''
 <list object>.clear()
+'''
 #---------------------------
 fruits = ['apple', 'banana', 'cherry', 'orange']
 fruits.clear()
 print(fruits) # Result []
 
 
+'''
 <list object>.count(value)
+'''
 #---------------------------
 fruits = ['apple', 'banana', 'cherry', 'cherry']
 x = fruits.count("cherry") # Result x = 2
 x = fruits.count("apple") # Result x = 1
 
 
+'''
 <list object>.extend(iterable)  
+'''
 # Any iterable (list, set, tuple, etc.)
 #---------------------------
 fruits = ['apple', 'banana', 'cherry']
@@ -61,7 +68,9 @@ print(fruits) # Result ['apple', 'banana', 'cherry', 'Ford', 'BMW', 'Volvo']
 print(cars) # Result ['Ford', 'BMW', 'Volvo']
 
 
+'''
 <list object>.index(value)
+'''
 #---------------------------
 numbers = [4, 55, 64, 32, 16, 32]
 x = numbers.index(32) # Result x = 3
@@ -72,14 +81,18 @@ print(is_has_number) # Result True
 print(10 in numbers) # Result False
 
 
+'''
 <list object>.insert(position, value)
+'''
 #---------------------------
 fruits = ['apple', 'banana', 'cherry']
 fruits.insert(1, "orange")
 print(fruits) # Result ['apple', 'orange', 'banana', 'cherry']
 
 
+'''
 <list object>.pop(position)
+'''
 #---------------------------
 characters = ['a', 'b', 'c', 'd', 'e']
 x = characters.pop(1) 
@@ -91,21 +104,27 @@ print(y) # Result 'e'
 print(characters) # Result ['a', 'c', 'd']
 
 
+'''
 <list object>.remove(value)
+'''
 #---------------------------
 fruits = ['apple', 'banana', 'cherry']
 fruits.remove("banana")
 print(fruits) # Result ['apple', 'cherry']
 
 
+'''
 <list object>.reverse()
+'''
 #---------------------------
 fruits = ['apple', 'banana', 'cherry']
 fruits.reverse()
 print(fruits) # Result ['cherry', 'banana', 'apple']
 
 
+'''
 <list object>.sort(reverse=True|False, key=Function)
+'''
 #---------------------------
 cars = ['Ford', 'BMW', 'Volvo']
 cars.sort()
@@ -114,7 +133,9 @@ cars.sort(reverse=True)
 print(cars) # Result ['Volvo', 'Ford', 'BMW']
 
 
+'''
 <list object>.copy()
+'''
 #---------------------------
 fruits = ['apple', 'banana', 'cherry']
 fruits_copied = fruits.copy()
@@ -175,6 +196,3 @@ print(text)
 """ไม่เท่ากับ List ทางขวามือจะหมายถึง List ของ String อีกที"""
 
 "Sukhum" == "".join(["S", "u", "k", "h", "u", "m"])
-
-
-

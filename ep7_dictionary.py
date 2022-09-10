@@ -40,7 +40,9 @@ x = thisdict["model"]
 # x = "Mustang"
 
 
+'''
 <dict object>.get(key, default_value)
+'''
 #---------------------------
 x = thisdict.get("model")
 # x = "Mustang"
@@ -59,7 +61,9 @@ thisdict = {
   "year": 1964
 }
 
+'''
 <dict object>.keys()
+'''
 #---------------------------
 x = thisdict.keys()
 # x = dict_keys(['brand', 'model', 'year'])
@@ -72,7 +76,9 @@ thisdict = {
   "year": 1964
 }
 
+'''
 <dict object>.values()
+'''
 #---------------------------
 x = thisdict.values()
 # x = dict_values(['Ford', 'Mustang', 2020])
@@ -84,7 +90,9 @@ car = {
 "year": 1964
 }
 
+'''
 <dict object>.items()
+'''
 #---------------------------
 x = car.items()
 # x = dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964)])
@@ -110,7 +118,9 @@ thisdict = {
   "model": "Mustang",
   "year": 1964
 }
+'''
 <dict object>.update(dictionary)
+'''
 #---------------------------
 thisdict.update({"color": "red"})
 
@@ -129,7 +139,9 @@ thisdict = {
   "model": "Mustang",
   "year": 1964
 }
+'''
 <dict object>.update(dictionary)
+'''
 #---------------------------
 thisdict.update({"year": 2020})
 
@@ -141,7 +153,9 @@ thisdict = {
 }
 
 #---------------------------
+'''
 <dict object>.pop(dictionary_key)
+'''
 #---------------------------
 x = thisdict.pop("model")
 print(thisdict)
@@ -159,7 +173,9 @@ thisdict = {
   "year": 1964
 }
 #---------------------------
+'''
 <dict object>.copy()
+'''
 #---------------------------
 mydict = thisdict.copy()
 

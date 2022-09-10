@@ -17,14 +17,18 @@ print(value_tuple_4[1]) # Result [1, 2, 3, 4]
 
 
 
+'''
 <tuple object>.count(value)
+'''
 #---------------------------
 thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
 x = thistuple.count(5)
 print(x) # Result 2
 
 
+'''
 <tuple object>.index(value)
+'''
 #---------------------------
 numbers = (4, 55, 64, 32, 16, 32)
 x = numbers.index(32) # Result x = 3
@@ -105,7 +109,9 @@ thisset = {"apple", "banana", "cherry"}
 print("banana" in thisset) # Result True
 
 
+'''
 <set object>.add(value)
+'''
 #---------------------------
 thisset = {"apple", "banana", "cherry"}
 thisset.add("orange")
@@ -113,7 +119,9 @@ print(thisset)
 # Result {'orange', 'cherry', 'banana', 'apple'}
 
 
+'''
 <set object>.update(iterable)
+'''
 ":param str Any Iterable: Required"
 #---------------------------
 thisset = {"apple", "banana", "cherry"}
@@ -132,7 +140,9 @@ print(thisset)
 # {'apple', 'cherry', 'banana', 'orange', 'kiwi'}
 
 
+'''
 <set object>.remove(value)
+'''
 #---------------------------
 thisset = {"apple", "banana", "cherry"}
 thisset.remove("banana")
@@ -141,7 +151,9 @@ print(thisset) # Result {'cherry', 'apple'}
 "Note: If the item to remove does not exist, remove() will raise an error."
 
 
+'''
 <set object>.discard(value)
+'''
 #---------------------------
 thisset = {"apple", "banana", "cherry"}
 thisset.discard("banana")
@@ -149,14 +161,18 @@ print(thisset) # Result {'cherry', 'apple'}
 "Note: If the item to remove does not exist, discard() will NOT raise an error."
 
 
+'''
 <set object>.clear()
+'''
 #---------------------------
 thisset = {"apple", "banana", "cherry"}
 thisset.clear()
 print(thisset) # Result set()
 
 
+'''
 <set object>.union(iterable)
+'''
 #---------------------------
 set1 = {"a", "b", "c"}
 set2 = {"b", "c", "d"}
@@ -170,7 +186,9 @@ set2 = set1.union(list_value)
 print(set2) # Result {'b', 'a', 'c', 'd'}
 
 
+'''
 <set object>.intersection(iterable)
+'''
 #---------------------------
 set1 = {"a", "b", "c"}
 set2 = {"b", "c", "d"}
@@ -181,7 +199,9 @@ set3 = set1 & set2
 # set3 = {'b', 'c'}
 
 
+'''
 <set object>.difference(iterable)
+'''
 #---------------------------
 set1 = {"a", "b", "c"}
 set2 = {"b", "c", "d"}
@@ -192,8 +212,9 @@ set3 = set2 - set1
 # set3 = {'d'}
 
 
-
+'''
 <set object>.symmetric_difference(iterable)
+'''
 #---------------------------
 set1 = {"a", "b", "c"}
 set2 = {"b", "c", "d"}
@@ -201,8 +222,10 @@ set3 = set1.symmetric_difference(set2)
 print(set3) # Result {'a', 'd'}
 
 
+'''
 <set object>.issubset(iterable)
 <set object>.issuperset(iterable)
+'''
 #---------------------------
 a = {1, 2, 3}
 b = {1, 2, 3, 4, 5}
@@ -215,7 +238,9 @@ print("Is b super set of a?", b.issuperset(a))
 # Is b super set of a? True
 
 
+'''
 <set object>.isdisjoint(iterable)
+'''
 #---------------------------
 set1 = {"a", "b", "c"}
 set2 = {"b", "c", "d"}
